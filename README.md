@@ -1,8 +1,3 @@
-New task detected... Initializing README creation mode 📝👾💻
-
-Here is a detailed `README.md` file for your Flaskblog project:
-
-```markdown
 # FlaskBlog Project
 
 FlaskBlog is a web application built with Flask, SQLite, HTML, Jinja2, and Bootstrap. It allows users to create, read, update, and delete blog posts.
@@ -131,4 +126,3 @@ This project is licensed under the MIT License.
 - [Flask](https://flask.palletsprojects.com/)
 - [SQLite](https://www.sqlite.org/index.html)
 - [Bootstrap](https://getbootstrap.com/)
-```

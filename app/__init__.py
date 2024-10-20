@@ -3,10 +3,19 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
+def create_app():
+    app = Flask(__name__)
+    from app.routes import main
+    app.register_blueprint(main)
+
+    return ap
 # Створюємо екземпляр класу Flask
-app = Flask(__name__)
+# app = Flask(__name__)
 # Встановлюємо конфігурацію для бази даних та секретного ключа
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///../instance/flaskblog.sqlite'
 app.config['SECRET_KEY'] = 'your_secret_key'
 # Ініціалізуємо базу даних
 db = SQLAlchemy(app)
+
+
+
